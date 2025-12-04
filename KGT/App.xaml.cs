@@ -5,10 +5,11 @@ namespace KGT
     public partial class App : Application
     {
         //Hier gehts los!!
-        void App_Startup(object sender, StartupEventArgs e)
+        void OnStartup(object sender, StartupEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            base.OnStartup(e);
+            //Hier shit hin!!
+
         }
     }
 }
