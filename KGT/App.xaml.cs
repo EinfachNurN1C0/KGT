@@ -5,11 +5,12 @@ namespace KGT
     public partial class App : Application
     {
         //Hier gehts los!!
-        void OnStartup(object sender, StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            //Hier shit hin!!
 
+            var KGT = new MainWindow();
+            KGT.Show();
         }
     }
 }
